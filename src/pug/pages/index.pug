@@ -1,20 +1,14 @@
 extends ../_template
 
 block variables
-  - var title       = 'Index'
-  - var description = ''
-  - var ogtitle     = ''
-  - var ogimage     = ''
-
-  - var pageHeaderTitle = ''
-  - var breadcrumbs     = 'breadcrumbs link'
+  - let title       = 'Index'
 
 block content
   .main-wrap.no-js
     include ../sections/header
 
     //begin content
-    main.main.index
+    main.main
     //end content
 
     include ../sections/footer

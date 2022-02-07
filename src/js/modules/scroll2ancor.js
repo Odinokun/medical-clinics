@@ -1,16 +1,16 @@
 module.exports = function() {
 
-  // begin scroll 2 ancore desktop menu
+  // begin scroll 2 encore desktop menu
   $(function() {
-    $('nav a[href*=\\#]').on("click", function(e){
-       // e.preventDefault();
-       var anchor = $(this);
+    $('.header-menu__item[href*=\\#]').on("click", function(e){
+       e.preventDefault();
+       let anchor = $(this);
        $('html, body').stop().animate({
         scrollTop: $(anchor.attr('href')).offset().top - 0 + 'px'
        }, 1000);
     });
     return false;
   });
-  // end scroll 2 ancore desktop menu
+  // end scroll 2 encore desktop menu
 
 };
