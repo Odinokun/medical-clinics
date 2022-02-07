@@ -2,7 +2,7 @@ module.exports = function() {
 
   // begin scroll 2 encore desktop menu
   $(function() {
-    $('.header-menu__item[href*=\\#]').on("click", function(e){
+    $('.header-menu__link[href*=\\#]').on("click", function(e){
        e.preventDefault();
        let anchor = $(this);
        $('html, body').stop().animate({
