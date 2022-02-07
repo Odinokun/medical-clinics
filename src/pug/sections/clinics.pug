@@ -1,0 +1,21 @@
+mixin clinics-item(pic, title, subtitle, text)
+  li.clinics__item.clinics-item
+    a(href="#" target="_blank" rel="nofollow noopener noreferrer").clinics-item__link
+      .clinics-item__img
+        img(src="assets/img/clinics-" + pic + ".png" alt= title)
+      h3.clinics-item__title #{title}
+      .clinics-item__subtitle #{subtitle}
+      p.clinics-item__text #{text}
+
+//- begin clinics
+section.clinics#clinics
+  .container
+    h2.title Наші клініки
+    h3.clinics__subtitle Щоб ознайомитись з повним спектром послуг, які ми пропонуємо, оберіть потрібну Вам клініку
+    //- begin clinics__list
+    ul.clinics__list
+      +clinics-item('01', 'POLI Medical', 'поліклініка', 'Надає послуги висококласної первинної та вторинної медичної допомоги на базі принципів доказової медицини')
+      +clinics-item('02', 'OVO Medical', 'клініка репродуктивних технологій', 'Спеціалізується на профілактиці, діагностиці та лікуванні порушень репродуктивної функції жінок та чоловіків. Має власну унікальну ембріологічну лабораторію')
+      +clinics-item('03', 'GASTRO Medical', 'гастроентерологічний центр', 'Реалізує сучасні програми діагностики та лікування у напрямках гастроентерології, гепатології, дієтології')
+    //- end   clinics__list
+//- end   clinics
