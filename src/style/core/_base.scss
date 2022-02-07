@@ -123,8 +123,8 @@ svg {
   margin-bottom: 16px;
   text-align: center;
   text-transform: uppercase;
-  @include responsive-font(48, 32);
 
+  @include responsive-font(48, 32);
   @include min(768) {
     margin-bottom: 24px;
   }

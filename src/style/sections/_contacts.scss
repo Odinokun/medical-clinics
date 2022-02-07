@@ -1,0 +1,15 @@
+.contacts {
+  padding-top: 8px;
+
+  @include min(1024) {
+    padding-top: 40px;
+  }
+
+  .title {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__map {
+  min-height: 450px;
+}
