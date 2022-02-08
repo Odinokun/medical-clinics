@@ -1,0 +1,65 @@
+//- begin contacts-info
+.contacts-info
+  .container
+    .contacts-info__left
+      .contacts-info__logo
+        img(src="assets/img/logo.svg" alt="Medical Clinics")
+      //- begin contacts-info__link-item
+      .contacts-info__link-item
+        .contacts-info__link-icon
+          +svg('marker')
+        .contacts-info__link-info
+          .contacts-info__link-label Адреса
+          a(href="https://goo.gl/maps/BzahM8FLHoCytsU29" target="_blank" rel="nofollow noopener noreferrer").contacts-info__link-text м. Львів , пр. Червоної Калини, 60, Avalon Up
+      //- end   contacts-info__link-item
+
+      //- begin contacts-info__link-item
+      .contacts-info__link-item
+        .contacts-info__link-icon
+          +svg('phone')
+        .contacts-info__link-info.contacts-info__link-info--phones
+          .contacts-info__link-label Телефони
+          .contacts-info__link-text-wrap
+            a(href="tel:+0961103003").contacts-info__link-text 096 110 30 03
+            a(href="tel:+0631103003").contacts-info__link-text 063 110 30 03
+          .contacts-info__link-text-wrap
+            a(href="tel:+0991103003").contacts-info__link-text 099 110 30 03
+            a(href="tel:+0322295033").contacts-info__link-text 032 229 50 33
+      //- end   contacts-info__link-item
+
+      //- begin contacts-info__link-item
+      .contacts-info__link-item
+        .contacts-info__link-icon
+          +svg('clock')
+        .contacts-info__link-info
+          .contacts-info__link-label Графік роботи
+          .contacts-info__link-text Понеділок - Субота: 8:00 - 20:00
+      //- end   contacts-info__link-item
+
+      //- begin contacts-info__link-item
+      .contacts-info__link-item
+        .contacts-info__link-icon
+          +svg('mail')
+        .contacts-info__link-info
+          .contacts-info__link-label Електронна пошта
+          a(href="mailto:hello@medicalclinics.group").contacts-info__link-text hello@medicalclinics.group
+      //- end   contacts-info__link-item
+
+    .contacts-info__right
+      h3.contacts-info__title записатись на візит
+      form.contacts-info__form
+        label.contacts-info__field
+          span.contacts-info__label Ваше ПІБ
+          input(type='text' ).contacts-info__input
+        label.contacts-info__field
+          span.contacts-info__label Ваш контактний телефон
+          input(type='text' ).contacts-info__input
+        label.contacts-info__field
+          span.contacts-info__label Ваш email
+          input(type='email' ).contacts-info__input
+        label.contacts-info__agree
+          input(type='checkbox')
+          .contacts-info__agree-checkbox
+          span.contacts-info__agree-label Згоден з обробкою персональних даних
+        button.contacts-info__btn Записатись
+//- end   contacts-info
