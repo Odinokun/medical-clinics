@@ -4,10 +4,17 @@
     flex-direction: column;
     align-items: center;
     padding-right: 0;
+    padding-bottom: 0;
     padding-left: 0;
 
+    @include min(560) {
+      padding-bottom: 24px;
+    }
     @include min(1024) {
       flex-direction: row;
+    }
+    @include min(1100) {
+      padding-bottom: 48px;
     }
   }
 }

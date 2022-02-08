@@ -1,0 +1,43 @@
+.footer {
+  background-color: rgba(0, 76, 69, .1);
+}
+
+.footer__title {
+  font-weight: 300;
+  margin-bottom: 12px;
+  text-align: center;
+
+  @include responsive-font(24, 20);
+  @include min(768) {
+    margin-bottom: 16px;
+  }
+}
+
+.footer__apps {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+
+.footer__app {
+  display: block;
+  overflow: hidden;
+  margin: 0 8px;
+  border-radius: 5px;
+
+  @include min(768) {
+    margin: 0 16px;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.footer__copyright {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: center;
+}
