@@ -13,9 +13,9 @@ module.exports = function () {
     map = new google.maps.Map(mapDiv, {
       maxZoom: 18,
       minZoom: 3,
-      zoom: 15,
+      zoom: 17,
       disableDefaultUI: false,
-      center: {lat: 49.794, lng: 24.054},
+      center: {lat: 49.7955, lng: 24.052},
       //Shades of Grey https://snazzymaps.com/style/38/shades-of-grey
       styles: [
         {
@@ -281,7 +281,7 @@ module.exports = function () {
 
     let marker = new google.maps.Marker({
       // Определяем позицию маркера
-      position: {lat: 49.792, lng: 24.054},
+      position: {lat: 49.795, lng: 24.052},
       // Указываем на какой карте он должен появится. (На странице ведь может быть больше одной карты)
       map: map,
       // Укажем свою иконку для маркера
