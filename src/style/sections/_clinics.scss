@@ -38,16 +38,16 @@
   border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 20px;
   background-color: transparent;
-  box-shadow: 0 0 75px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 35px rgba(0, 0, 0, .07);
 
   @include min(1100) {
     width: calc(33.33% - 16px);
   }
 
   &:hover {
-    border: 1px solid rgba(0, 0, 0, .05);
+    border: 1px solid #c3e0e8;
     background-color: #fff;
-    box-shadow: 0 0 75px rgba(0, 0, 0, .09);
+    box-shadow: 0 0 35px rgba(73, 166, 190, .41);
   }
 }
 

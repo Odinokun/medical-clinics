@@ -10,6 +10,8 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  border-radius: 45px;
+  background-color: #70d2eb;
 }
 
 .header-menu__link {
@@ -21,7 +23,7 @@
   transition: all $transition;
   white-space: nowrap;
   text-transform: uppercase;
-  color: $text;
+  color: #fff;
   border-radius: 45px;
   background-color: transparent;
 
@@ -36,6 +38,6 @@
   &.active,
   &:hover {
     color: #fff;
-    background-color: #70d2eb;
+    background-color: #65bed5;
   }
 }
